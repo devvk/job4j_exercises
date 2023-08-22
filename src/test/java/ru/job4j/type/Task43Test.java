@@ -1,13 +1,12 @@
 package ru.job4j.type;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.StringJoiner;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class Task43Test {
     @Test
@@ -18,7 +17,7 @@ public class Task43Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("126").add("453");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 
     @Test
@@ -29,7 +28,7 @@ public class Task43Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("109").add("990");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 
     @Test
@@ -40,6 +39,6 @@ public class Task43Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("557").add("775");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 }
