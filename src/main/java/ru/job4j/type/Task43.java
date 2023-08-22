@@ -8,7 +8,7 @@ public class Task43 {
         int number1LastDigit = number1 % 10;
         int number2LastDigit = number2 % 10;
 
-        System.out.printf("%d%d\r\n", number1FirstTwoDigits, number2LastDigit);
-        System.out.printf("%d%d\r\n", number2FirstTwoDigits, number1LastDigit);
+        System.out.println(number1FirstTwoDigits * 10 + number2LastDigit);
+        System.out.println(number2FirstTwoDigits * 10 + number1LastDigit);
     }
 }
