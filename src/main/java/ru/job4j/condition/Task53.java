@@ -49,8 +49,4 @@ public class Task53 {
 
         System.out.println(hundreds * 100 + tens * 10 + ones);
     }
-
-    public static void main(String[] args) {
-        transform(190);
-    }
 }
