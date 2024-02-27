@@ -14,8 +14,4 @@ public class Task75 {
 
         System.out.println(count);
     }
-
-    public static void main(String[] args) {
-        innerNum(12, 12266312);
-    }
 }
