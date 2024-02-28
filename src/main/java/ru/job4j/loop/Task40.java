@@ -13,7 +13,3 @@ public class Task40 {
         System.out.println(sj);
     }
 }
-
-
-
-
