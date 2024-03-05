@@ -1,14 +1,14 @@
 package ru.job4j.loop;
 
 public class Task84 {
-    public static void loop(int previous, int next, int num) {
-        int result = previous + next;
-        for (int i = 2; i < num; i++) {
+    public static void loop(int previous, int next, int length) {
+        int sum = previous + next;
+        for (int i = 2; i < length; i++) {
             int tmp = previous;
             previous = next;
             next += tmp;
-            result += next;
+            sum += next;
         }
-        System.out.println(result);
+        System.out.println(sum);
     }
 }
