@@ -7,7 +7,6 @@ import java.io.PrintStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 public class Task88Test {
     private final String ln = System.lineSeparator();
 
