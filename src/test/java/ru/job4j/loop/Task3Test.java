@@ -12,20 +12,20 @@ public class Task3Test {
 
     @Test
     public void out3() {
-        var out = new ByteArrayOutputStream();
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
         Task3.loop(3);
-        var expected = new StringJoiner(System.lineSeparator(), "", System.lineSeparator())
+        String expected = new StringJoiner(System.lineSeparator(), "", System.lineSeparator())
                 .add("2").add("1").add("0").toString();
         assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
     public void out2() {
-        var out = new ByteArrayOutputStream();
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
         Task3.loop(2);
-        var expected = new StringJoiner(System.lineSeparator(), "", System.lineSeparator())
+        String expected = new StringJoiner(System.lineSeparator(), "", System.lineSeparator())
                 .add("1").add("0").toString();
         assertThat(out.toString()).isEqualTo(expected);
     }
