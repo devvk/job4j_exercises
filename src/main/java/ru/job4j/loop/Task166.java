@@ -9,7 +9,6 @@ public class Task166 {
             if (i % 10 == 0 && getSumOddDivisors(i) % 10 == 0) {
                 sj.add(String.valueOf(i));
             }
-
         }
         System.out.println(sj);
     }
