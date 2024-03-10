@@ -2,21 +2,17 @@ package ru.job4j.loop;
 
 public class Task150 {
     public static void loop(int overdraft, int account, int[] transfers) {
-        int counter = 0;
-        int rest = 0;
-        for (int amount : transfers) {
-            if (amount > 0) {
-                account += amount;
-            } else if (amount < 0 && account - amount
-                    >= (account + Math.abs(overdraft))) {
-                account -= amount;
-            } else if ((amount < 0 && account - amount
-                    < (account + Math.abs(overdraft)))
-                    || amount == 0) {
+        int operations = 0;
+        for (int transfer : transfers) {
+            if (transfer == 0) {
                 break;
             }
-            counter++;
+            if (account + transfer < overdraft) {
+                break;
+            }
+            account += transfer;
+            operations++;
         }
-        System.out.printf("Остаток: %d, операций: %d%n", rest, counter);
+        System.out.printf("Остаток: %d, операций: %d%n", account, operations);
     }
 }
