@@ -8,7 +8,7 @@ import java.io.PrintStream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Task54Test {
-    public String ln = System.lineSeparator();
+    private final String ln = System.lineSeparator();
 
     @Test
     public void when1And2And3Then3() {

@@ -8,7 +8,7 @@ import java.io.PrintStream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Task33Test {
-    public String ln = System.lineSeparator();
+    private final String ln = System.lineSeparator();
 
     @Test
     public void whenTestThen110And121And132And143And154() {

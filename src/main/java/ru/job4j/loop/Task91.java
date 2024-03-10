@@ -8,7 +8,8 @@ public class Task91 {
         if (n3 - n2 == step) {
             StringJoiner sj = new StringJoiner(" ");
             for (int i = 0; i < 3; i++) {
-                sj.add(String.valueOf(n3 += step));
+                n3 += step;
+                sj.add(String.valueOf(n3));
             }
             System.out.println(sj);
         } else {

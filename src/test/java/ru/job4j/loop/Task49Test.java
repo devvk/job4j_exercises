@@ -8,7 +8,7 @@ import java.io.PrintStream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Task49Test {
-    public String ln = System.lineSeparator();
+    private final String ln = System.lineSeparator();
 
     @Test
     public void when10And3Then4And6And8And10() {
@@ -33,8 +33,7 @@ public class Task49Test {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
         Task49.loop(1, 1);
-        String expected = ln;
-        assertThat(out.toString()).isEqualTo(expected);
+        assertThat(out.toString()).isEqualTo(ln);
     }
 
     @Test

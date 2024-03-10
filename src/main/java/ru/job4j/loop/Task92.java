@@ -8,7 +8,8 @@ public class Task92 {
             StringJoiner sj = new StringJoiner(" ");
             int step = a2 / n2;
             while (n1 + 1 < n2) {
-                sj.add(String.valueOf(a1 += step));
+                a1 += step;
+                sj.add(String.valueOf(a1));
                 n1++;
             }
             System.out.println(sj);
