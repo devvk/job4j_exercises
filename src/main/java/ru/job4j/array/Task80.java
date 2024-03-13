@@ -7,13 +7,13 @@ public class Task80 {
         int id = 0;
         int[] ids = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            int countDouble = 0;
+            int repeated = 0;
             for (int a2 : nums) {
                 if (nums[i] == a2) {
-                    countDouble++;
+                    repeated++;
                 }
             }
-            if (countDouble == 1) {
+            if (repeated == 1) {
                 ids[id++] = i;
             }
         }
