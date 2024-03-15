@@ -11,6 +11,6 @@ public class Task32 {
                 countNegative++;
             }
         }
-        return countNegative % 2 != 0;
+        return countNegative % 2 != 0 && countPositive % 2 != 0;
     }
 }
