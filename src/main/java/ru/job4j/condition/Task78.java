@@ -4,8 +4,8 @@ import java.util.StringJoiner;
 
 public class Task78 {
     public static void divWithoutRemainder(int num) {
-        String str = Integer.toString(num);
         boolean found = false;
+        String str = Integer.toString(num);
         StringJoiner sj = new StringJoiner(" ");
 
         for (char c : str.toCharArray()) {
@@ -15,16 +15,6 @@ public class Task78 {
                 sj.add(Integer.toString(i));
             }
         }
-
-        if (!found) {
-            System.out.println("Таких чисел нет");
-        } else {
-            System.out.println(sj);
-
-        }
-    }
-
-    public static void main(String[] args) {
-        divWithoutRemainder(234570);
+        System.out.println(found ? sj : "Таких чисел нет");
     }
 }
