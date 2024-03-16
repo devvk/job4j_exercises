@@ -20,6 +20,5 @@ public class Task169 {
                 starCount += 2;
             }
         }
-
     }
 }
