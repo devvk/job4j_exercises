@@ -1,13 +1,12 @@
 package ru.job4j.oop;
 
-import org.hamcrest.MatcherAssert;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.StringJoiner;
 
-import static org.hamcrest.core.Is.is;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class Task1Test {
     @Test
@@ -19,7 +18,7 @@ public class Task1Test {
                 System.lineSeparator(), "", System.lineSeparator()
         ).add("I would like to drink a cup of tea.")
                 .toString();
-        MatcherAssert.assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -31,6 +30,6 @@ public class Task1Test {
                 System.lineSeparator(), "", System.lineSeparator()
         ).add("I would like to drink a cup of tea.")
                 .toString();
-        MatcherAssert.assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 }
