@@ -54,7 +54,7 @@ public class Questions {
     public static void main(String[] args) {
         Questions q = new Questions();
         for (int i = 0; i < 5; i++) {
-            Questions.answer(q.ask());
+            answer(q.ask());
         }
     }
 }
