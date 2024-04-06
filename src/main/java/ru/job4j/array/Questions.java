@@ -12,7 +12,7 @@ public class Questions {
     private final Random rand = new Random();
 
     public int ask() {
-        final int prob = (int) (100 * rand.nextDouble());
+        final int prob = (rand.nextInt(100) + 1);
         if (prob < 30) {
             return NO;
         } else if (prob < 60) {
