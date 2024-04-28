@@ -1,9 +1,9 @@
-package ru.job4j.pattern.decorator;
+package ru.job4j.pattern.decorator.pizza;
 
-public class MushroomDecorator implements Pizza {
+public class PepperoniDecorator implements Pizza {
     private final Pizza pizza;
 
-    public MushroomDecorator(Pizza pizza) {
+    public PepperoniDecorator(Pizza pizza) {
         this.pizza = pizza;
     }
 
@@ -14,6 +14,6 @@ public class MushroomDecorator implements Pizza {
 
     @Override
     public String getDescription() {
-        return pizza.getDescription() + " + mushroom";
+        return pizza.getDescription() + " + pepperoni";
     }
 }

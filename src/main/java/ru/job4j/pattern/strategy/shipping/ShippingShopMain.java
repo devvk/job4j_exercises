@@ -1,4 +1,4 @@
-package ru.job4j.pattern.strategy;
+package ru.job4j.pattern.strategy.shipping;
 
 public class ShippingShopMain {
     public static void main(String[] args) {

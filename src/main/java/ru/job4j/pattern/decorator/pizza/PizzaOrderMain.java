@@ -1,4 +1,4 @@
-package ru.job4j.pattern.decorator;
+package ru.job4j.pattern.decorator.pizza;
 
 public class PizzaOrderMain {
     public static void main(String[] args) {
