@@ -1,4 +1,4 @@
-package ru.job4j.pattern.strategy.shipping;
+package ru.job4j.pattern.strategy;
 
 public interface ShippingStrategy {
     double COST_WEIGHT = 3.5;
