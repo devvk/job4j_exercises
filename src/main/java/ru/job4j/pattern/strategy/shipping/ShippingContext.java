@@ -1,6 +1,7 @@
 package ru.job4j.pattern.strategy.shipping;
 
 public class ShippingContext {
+
     private ShippingStrategy strategy;
 
     public void setStrategy(ShippingStrategy strategy) {
