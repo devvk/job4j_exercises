@@ -1,4 +1,4 @@
-package ru.job4j.pattern.factory;
+package ru.job4j.pattern.factory.watch;
 
 public class FactoryMethodMain {
     public static WatchMaker createWatchMakerByName(MakerType type) {

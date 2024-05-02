@@ -1,4 +1,4 @@
-package ru.job4j.pattern.factory;
+package ru.job4j.pattern.factory.watch;
 
 public class RomeWatch implements Watch {
     @Override
