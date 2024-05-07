@@ -17,5 +17,7 @@ enum Apple {
         for (Apple a : Apple.values()) {
             System.out.println(a + ": " + a.getPrice());
         }
+
+        System.out.println(Apple.valueOf("Jonathan"));
     }
 }
