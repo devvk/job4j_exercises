@@ -25,5 +25,6 @@ enum Apple {
 
         System.out.println(Apple.valueOf("Jonathan") + ": "
                 + Apple.Jonathan.getPrice());
+
     }
 }
