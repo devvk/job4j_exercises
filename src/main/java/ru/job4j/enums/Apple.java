@@ -1,12 +1,17 @@
 package ru.job4j.enums;
 
 enum Apple {
-    Jonathan(10), GoldenDel(9), RedDel(8), Winesap(15), Cortland(8);
+    Jonathan(10), GoldenDel(9), RedDel(8), Winesap(15),
+    Cortland(8), Green();
 
     private final int price;
 
     Apple(int price) {
         this.price = price;
+    }
+
+    Apple() {
+        this.price = 3;
     }
 
     public int getPrice() {
