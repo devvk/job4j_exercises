@@ -8,9 +8,7 @@ public record Cat(String name, int numberOfLives, String color) {
     public boolean isAlive() {
         return numberOfLives > 0;
     }
-}
 
-class Test {
     public static void main(String[] args) {
         Cat c1 = new Cat("Miv", 3, "white");
         Cat c2 = new Cat("Lulu", 3, "black");
