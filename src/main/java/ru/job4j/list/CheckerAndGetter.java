@@ -6,7 +6,7 @@ public class CheckerAndGetter {
     public static String getElement(List<String> list) {
         String result = "";
         if (!list.isEmpty()) {
-            result = list.get(0);
+            result = list.getFirst();
         }
         return result;
     }
