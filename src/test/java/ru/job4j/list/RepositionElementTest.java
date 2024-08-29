@@ -10,8 +10,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 class RepositionElementTest {
-    private final List<String> list = new ArrayList<>(Arrays.asList("one", "two", "three", "four", "five",
-            "six", "seven", "eight", "nine"));
+    private final List<String> list = new ArrayList<>(Arrays.asList(
+            "one", "two", "three", "four", "five",
+            "six", "seven", "eight", "nine"
+    ));
 
     @Test
     public void changePositionWithValidIndex() {
