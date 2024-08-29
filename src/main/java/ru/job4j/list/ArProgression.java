@@ -9,7 +9,10 @@ public class ArProgression {
         }
         int sum = data.getFirst() + data.getLast();
         for (int i = 1; i < data.size() - 1; i++) {
-            if (data.get(i) == (data.get(i - 1) + data.get(i + 1)) / 2) {
+            int prev = data.get(i - 1);
+            int current = data.get(i);
+            int next = data.get(i + 1);
+            if (current == (prev + next) / 2) {
                 sum += data.get(i);
             } else {
                 sum = 0;
