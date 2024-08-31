@@ -83,7 +83,6 @@ public class CLParser {
                     addMode = true;
                     break;
                 default:
-                    // Если это не флаг, считаем это входным файлом
                     if (!arg.startsWith("-")) {
                         inputs.add(arg);
                     } else {
