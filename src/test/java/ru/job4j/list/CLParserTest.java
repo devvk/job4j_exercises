@@ -80,6 +80,8 @@ public class CLParserTest {
     public void whenNonArgsStatistic() {
         CLParser parser = new CLParser(new String[]{"in1.txt"});
         assertThat(parser.parse()).isFalse();
-        assertThat(parser.description()).isEqualTo(List.of("Don't config statistic flags -s or -f."));
+        assertThat(parser.description()).isEqualTo(List.of(
+                "Don't config statistic flags -s or -f."
+        ));
     }
 }
