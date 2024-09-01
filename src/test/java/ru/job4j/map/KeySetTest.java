@@ -7,7 +7,6 @@ import java.io.PrintStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 public class KeySetTest {
     @Test
     public void main() {
