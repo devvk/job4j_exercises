@@ -6,10 +6,10 @@ import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class NaturalOrderTest {
+public class ReverseOrderTest {
 
     @Test
     public void test() {
-        assertEquals(Comparator.naturalOrder(), NaturalOrder.naturalOrder());
+        assertEquals(Comparator.reverseOrder(), ReverseOrder.reverseOrder());
     }
 }
