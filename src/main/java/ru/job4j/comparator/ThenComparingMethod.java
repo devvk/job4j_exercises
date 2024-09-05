@@ -14,9 +14,9 @@ public class ThenComparingMethod {
         @Override
         public String toString() {
             return "User{"
-                    + "name='" + name + '\''
+                    + "name=" + name
                     + ", age=" + age
-                    + '}';
+                    + "}";
         }
     }
 
