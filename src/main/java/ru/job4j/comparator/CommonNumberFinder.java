@@ -6,7 +6,7 @@ import java.util.List;
 public class CommonNumberFinder {
 
     public int findCommonNumber(List<Integer> list1, List<Integer> list2, List<Integer> list3) {
-        if (list1.size() > 1 && list2.size() > 1 && list3.size() > 1) {
+        if (!list1.isEmpty() && !list2.isEmpty() && !list3.isEmpty()) {
             list1.sort(Comparator.reverseOrder());
             list2.sort(Comparator.reverseOrder());
             list3.sort(Comparator.reverseOrder());
