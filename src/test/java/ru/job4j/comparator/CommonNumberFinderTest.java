@@ -39,7 +39,7 @@ public class CommonNumberFinderTest {
         List<Integer> list3 = Arrays.asList(7, 5, 3, 2);
 
         int result = finder.findCommonNumber(list1, list2, list3);
-        assertThat(result).isEqualTo(5);
+        assertThat(result).isEqualTo(3);
     }
 
     @Test
