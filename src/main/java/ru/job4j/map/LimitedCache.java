@@ -36,7 +36,7 @@ public class LimitedCache<K, V> {
         cache.put(3, 3);
         cache.put(4, 4);
         cache.put(5, 5);
-        System.out.println(cache.size());
+        System.out.println("size: " + cache.size());
         for (Map.Entry<Integer, Integer> entry : cache.cache.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
