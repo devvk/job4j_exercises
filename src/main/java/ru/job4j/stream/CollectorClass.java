@@ -16,8 +16,8 @@ public class CollectorClass {
             left.addAll(right);
             return left;
         };
-        return list.stream().
-                collect(Collector.of(
+        return list.stream()
+                .collect(Collector.of(
                         supplier,
                         biConsumer,
                         operator)
